@@ -25,8 +25,8 @@
 }
 
 @font-face {
-  font-family: "Ruberoid";
-  src: url(Ruberoid/Ruberoid-Medium.otf);
+  font-family: "ruberoid-medium";
+  src: url("assets/fonts/Ruberoid/Ruberoid-Medium.otf") format("opentype");
 }
 
 h1,
