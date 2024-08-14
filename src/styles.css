@@ -28,6 +28,38 @@
   font-family: "ruberoid-medium";
   src: url("assets/fonts/Ruberoid/Ruberoid-Medium.otf") format("opentype");
 }
+@font-face {
+  font-family: "ruberoid-light";
+  src: url("assets/fonts/Ruberoid/Ruberoid-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ruberoid-regular";
+  src: url("assets/fonts/Ruberoid/Ruberoid-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ruberoid-semibold";
+  src: url("assets/fonts/Ruberoid/Ruberoid-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "plusjakartasans-light";
+  src: url("assets/fonts/Plus-Jakarta/PlusJakartaSans-Light.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "plusjakartasans-regular";
+  src: url("assets/fonts/Plus-Jakarta/PlusJakartaSans-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "plusjakartasans-semibold";
+  src: url("assets/fonts/Plus-Jakarta/PlusJakartaSans-SemiBold.ttf")
+    format("truetype");
+}
 
 h1,
 h3,

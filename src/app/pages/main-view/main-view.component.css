@@ -1,0 +1,326 @@
+/* Shared classes */
+
+.hover-button {
+  transition: transform 0.1s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(180deg, #2a1d68 44.8%, #7967d0 100%); */
+  /* background-image: url(/Imagenes//backgrounds/first-view-bg.webp); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  position: relative;
+}
+
+.main-container-video {
+  position: absolute;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  position: absolute;
+
+  video {
+    width: 100%;
+  }
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 27px;
+  margin-inline: auto;
+}
+
+.aecode-logo {
+  height: 25px;
+}
+
+.button {
+  display: inline-flex;
+  height: 39px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 42.5px;
+  background: var(--Morado-3, #381187);
+  box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
+  color: var(--Blanco, #fff);
+  font-family: "ruberoid-semibold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 200% */
+  border: none;
+  text-decoration: none;
+}
+
+.shaman-button-mobile {
+  display: none;
+}
+
+.shaman-button {
+  display: flex;
+  border: 1.2px solid #916dbf;
+  padding: 2px 0 2px;
+  gap: 17px;
+  z-index: 0;
+
+  .svg-container {
+    width: 34px;
+    height: 34px;
+    margin-inline-start: 2px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c5ccde;
+    border: 1px solid white;
+    transition: transform 0.8s ease;
+
+    .shaman-button-img {
+      display: none;
+    }
+  }
+
+  .shaman-button-text {
+    margin-inline-end: 28px;
+    color: white;
+    font-family: "ruberoid-semibold";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    transition: transform 0.8s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    border: 1.2px solid #eeedff;
+    background: var(--Gris-2, #eef3f8);
+    box-shadow: 0px 4px 4px 0px rgba(56, 17, 135, 0.4),
+      0px -2px 4.7px 0px rgba(0, 0, 0, 0.25) inset,
+      0px 7px 12px 2px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  &:hover .svg-container {
+    transform: translateX(120px);
+    background-color: #381187;
+    background: linear-gradient(to bottom, rgb(121, 99, 167), rgb(56, 17, 135));
+
+    .fire-svg {
+      display: none;
+    }
+
+    .shaman-button-img {
+      width: 28px;
+      height: 28px;
+      display: block;
+    }
+  }
+
+  &:hover .shaman-button-text {
+    transform: translateX(-25px);
+    color: #381187;
+  }
+}
+
+.coming-soon-container {
+  width: 726px;
+  height: auto;
+  padding: 23px 27px 35px 28px;
+  margin-inline: auto;
+  text-align: center;
+  border-radius: 15px;
+  background: white;
+  box-shadow: -12px 1px 40.7px 1px rgba(0, 0, 0, 0.25);
+  position: relative;
+
+  .choose-your-path-button {
+    display: flex;
+    width: 136px;
+    height: 31px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 22px;
+    color: var(--Blanco, #fff);
+    font-family: "Ruberoid-SemiBold";
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration: none;
+    box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
+    position: absolute;
+    bottom: 29%;
+    z-index: 2;
+  }
+
+  .button-1 {
+    background: #5225af;
+    left: 19.5%;
+  }
+  .button-2 {
+    background: var(--Azul-2, #203aa5);
+    right: 19.5%;
+  }
+
+  .coming-soon-media {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-inline: auto;
+    }
+  }
+
+  .coming-soon-content {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .coming-soon-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      padding-inline: 9px;
+      border-radius: 6px;
+      box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+
+      span {
+        margin: 0;
+        color: #381187;
+        font-family: "ruberoid-medium";
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px; /* 65.714% */
+      }
+    }
+  }
+
+  .coming-soon-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-inline: auto;
+  }
+
+  /* h1 {
+      margin-top: 24px;
+      color: #000;
+      text-align: center;
+      font-family: "ruberoid-semibold";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 23px; 
+    } */
+
+  h3 {
+    margin: 0;
+    color: #381187;
+    text-align: center;
+    font-family: "ruberoid-medium";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px; /* 65.714% */
+  }
+}
+
+@media (max-width: 720px) {
+  .main-container {
+    height: 100%;
+    padding: 59px 0 11px;
+  }
+
+  .background-video {
+    height: 820px;
+  }
+
+  .main-container-video {
+    video {
+      height: 100dvh;
+      width: auto;
+    }
+  }
+
+  .aecode-logo {
+    width: 127px;
+  }
+
+  .content-container {
+    display: flex;
+    height: 520px;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .coming-soon-container {
+    width: 358px;
+    height: auto;
+    margin-inline: auto;
+    padding: 11px 11px 15px;
+    .coming-soon-content {
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 10px;
+      .coming-soon-text {
+        span {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .choose-your-path-button {
+      display: flex;
+      width: 70px;
+      height: 15px;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 22px;
+      color: var(--Blanco, #fff);
+      font-family: "Ruberoid-SemiBold";
+      font-size: 6px;
+      line-height: 24px;
+      text-decoration: none;
+      box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
+      position: absolute;
+      bottom: 44%;
+      z-index: 2;
+    }
+
+    .button-1 {
+      background: #5225af;
+      left: 19.5%;
+    }
+    .button-2 {
+      background: var(--Azul-2, #203aa5);
+      right: 19.5%;
+    }
+
+    h3 {
+      margin-top: 15px;
+      margin-bottom: 0px;
+      font-size: 20px;
+    }
+  }
+}
