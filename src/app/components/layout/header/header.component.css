@@ -1,0 +1,100 @@
+/* Contenedor de la barra de navegación */
+.navbar {
+  background-color: var(--white-1);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Alineación del contenido de la barra de navegación */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Alineación y tamaño del logo */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.navbar-brand img {
+  max-height: 50px; /* Limitar el tamaño del logo */
+  width: auto; /* Mantener la proporción del logo */
+}
+
+/* Alineación de los enlaces */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: var(--black-1);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  color: var(--blue-1);
+  background-color: var(--white-1);
+}
+
+.nav-link-icon {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #343a40;
+}
+
+.iconoHeader {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+/* Botón de registro */
+.btn-primary {
+  background-color: var(--blue-1);
+  border-color: var(--blue-1);
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  color:var(--white-1);;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3a006a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-brand {
+    margin-left: 0;
+  }
+}

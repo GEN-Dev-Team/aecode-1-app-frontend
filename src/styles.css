@@ -2,6 +2,7 @@
   --gray-1: #b4bbbf;
   --gray-2: #cad5da;
   --gray-3: #eff9fe;
+  --white-1:#f8f9fa;
   --orange-1: #7a3717;
   --orange-2: #ce7b2d;
   --orange-3: #e4a025;
@@ -22,6 +23,8 @@
   --purple-2: #3e2c80;
   --purple-3: #7837dd;
   --purple-4: #8f60ea;
+  --black-1:#343a40;
+
 }
 
 @font-face {
