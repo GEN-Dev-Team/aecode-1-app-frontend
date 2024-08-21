@@ -1,6 +1,13 @@
-<div class="navbar navbar-expand-lg bg-light fixed-top">
-  <div class="container">
-    <button
+<header class="navbar-container">
+  <div class="navbar-content">
+    <a href="/aecode-programas#Home" class="navbar-logo"
+      ><img
+        src="/assets/images/aecode-logo.webp"
+        alt="AECode Logo"
+        class="logo"
+    /></a>
+
+    <!-- <button
       id="botonHamburguesa"
       class="navbar-toggler"
       style="position: absolute; right: 10%; top: 20%"
@@ -9,42 +16,23 @@
       data-bs-target="#navbarNavDropdown"
     >
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a href="aecode-programas_en.html#Home" class="nav-link mt-2"><strong>Home</strong></a>
-        </li>
-        <li class="nav-item">
-          <a href="aecode-programas_en.html#Capacitaciones" class="nav-link mt-2"><strong>Training</strong></a>
-        </li>
-        <li class="nav-item">
-          <a href="aecode-programas_en.html#Contáctanos" class="nav-link mt-2"><strong>Contact us</strong></a>
-        </li>
-        <li class="nav-item mt-1">
-          <a href="/aecode-programas.html" class="nav-link nav-link-icon">
-            <i class="fa-solid iconoHeader fa-earth-americas"></i>
-            <span class="icon-text"><strong>EN</strong></span>
-          </a>
-        </li>
-        <li class="nav-item mt-2">
-          <div class="slide">
-            <button
-              type="button"
-              onclick="mostrarFormulario()"
-              class="btn btn-primary"
-              style="width: 100px; background-color: #380489; border: #380489;"
-            >
-              Sign up
-            </button>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <a href="/aecode-programas_en.html#Home" class="navbar-brand ms-auto"
-      ><img src="/assets/images/aecode-logo.webp" alt="AECode Logo" class="img-fluid logo"
-    /></a>
+    <ul class="navbar-list">
+      <a href="/aecode-programas#Home" class="navbar-item"
+        ><strong>Inicio</strong></a
+      >
+      <a href="/aecode-programas#Capacitaciones" class="navbar-item"
+        ><strong>Capacitaciones</strong></a
+      >
+      <a href="/aecode-programas#Contáctanos" class="navbar-item"
+        ><strong>Contáctanos</strong></a
+      >
+      <a href="/aecode-programas" class="navbar-item">
+        <app-world-icon class="world-icon" />
+        <span class="icon-text"><strong>EN</strong></span>
+      </a>
+      <button type="button" class="header-button">Sign up</button>
+    </ul>
   </div>
-</div>
+</header>

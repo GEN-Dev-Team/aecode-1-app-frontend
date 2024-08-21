@@ -1,80 +1,80 @@
-/* Contenedor de la barra de navegación */
-.navbar {
+.navbar-container {
+  height: 71px;
+  display: flex;
+  align-items: center;
   background-color: var(--white-1);
-  padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
 
-/* Alineación del contenido de la barra de navegación */
-.navbar .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  .navbar-content {
+    width: 1440px;
+    padding-inline: 45px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-/* Alineación y tamaño del logo */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  padding-bottom: 0;
-}
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      padding-bottom: 0;
 
-.navbar-brand img {
-  max-height: 50px; /* Limitar el tamaño del logo */
-  width: auto; /* Mantener la proporción del logo */
-}
+      img {
+        max-height: 25px;
+      }
+    }
 
-/* Alineación de los enlaces */
-.navbar-nav {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
+    .navbar-list {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      gap: 20px;
+      align-items: center;
+      font-size: 16px;
+      font-family: "ruberoid-medium";
 
-.nav-link {
-  color: var(--black-1);
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
+      .navbar-item {
+        display: flex;
+        align-items: center;
+        color: var(--black-1);
+        text-decoration: none;
+        opacity: 0.85;
 
-.nav-link:hover {
-  color: var(--blue-1);
-  background-color: var(--white-1);
-}
+        &:hover {
+          opacity: 1;
+        }
 
-.nav-link-icon {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  color: #343a40;
-}
+        .world-icon {
+          opacity: 0.85;
+          width: 25px;
+          height: 25.5px;
 
-.iconoHeader {
-  font-size: 1.2rem;
-  margin-right: 5px;
-}
+          &:hover {
+            opacity: 1;
+          }
+        }
 
-/* Botón de registro */
-.btn-primary {
-  background-color: var(--blue-1);
-  border-color: var(--blue-1);
-  padding: 8px 16px;
-  font-weight: 600;
-  border-radius: 4px;
-  color:var(--white-1);;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
+        .icon-text {
+          padding-inline-start: 8px;
+        }
+      }
 
-.btn-primary:hover {
-  background-color: #3a006a;
-  transform: translateY(-2px);
+      .header-button {
+        width: 110px;
+        height: 36px;
+        border-radius: 6px;
+        color: white;
+        font-size: 16px;
+        font-family: "ruberoid-medium";
+        cursor: pointer;
+        background-color: var(--purple-1);
+        border: var(--purple-1);
+
+        &:hover {
+          opacity: 0.95;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {

@@ -12,7 +12,7 @@ export const routes: Routes = [
   {
     path: 'aecode-programas',
     component: LandingPageComponent,
-    title: 'Landing Page',
+    title: 'AECODE - Programas',
   },
   {
     path: '',

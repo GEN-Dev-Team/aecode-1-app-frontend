@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainContainerComponent } from './main-container.component';
+import { FireIconComponent } from './fire-icon.component';
 
-describe('MainContainerComponent', () => {
-  let component: MainContainerComponent;
-  let fixture: ComponentFixture<MainContainerComponent>;
+describe('FireIconComponent', () => {
+  let component: FireIconComponent;
+  let fixture: ComponentFixture<FireIconComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MainContainerComponent]
+      imports: [FireIconComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(MainContainerComponent);
+    fixture = TestBed.createComponent(FireIconComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

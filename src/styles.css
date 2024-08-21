@@ -1,8 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --gray-1: #b4bbbf;
   --gray-2: #cad5da;
   --gray-3: #eff9fe;
-  --white-1:#f8f9fa;
+  --white-1: #f8f9fa;
   --orange-1: #7a3717;
   --orange-2: #ce7b2d;
   --orange-3: #e4a025;
@@ -19,12 +25,12 @@
   --blue-1: #14257c;
   --blue-2: #203aa5;
   --blue-3: #3659c9;
-  --purple-1: #2a1d68;
+  --purple-1: #380489;
   --purple-2: #3e2c80;
   --purple-3: #7837dd;
   --purple-4: #8f60ea;
-  --black-1:#343a40;
-
+  --black-1: #343a40;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -53,6 +59,12 @@
 }
 
 @font-face {
+  font-family: "plusjakartasans-medium";
+  src: url("assets/fonts/Plus-Jakarta/PlusJakartaSans-Medium.ttf")
+    format("truetype");
+}
+
+@font-face {
   font-family: "plusjakartasans-regular";
   src: url("assets/fonts/Plus-Jakarta/PlusJakartaSans-Regular.ttf")
     format("truetype");
@@ -62,15 +74,6 @@
   font-family: "plusjakartasans-semibold";
   src: url("assets/fonts/Plus-Jakarta/PlusJakartaSans-SemiBold.ttf")
     format("truetype");
-}
-
-h1,
-h3,
-h2,
-h5,
-h4,
-h6 {
-  font-family: "Ruberoid";
 }
 
 body {

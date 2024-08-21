@@ -1,14 +1,19 @@
 .header-container {
+  width: 100%;
   background-color: white;
+
   .header {
-    width: 1440px;
-    display: flex;
+    max-width: 1440px;
     padding: 14px 45px 11px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-inline: auto;
+
     .aecode-logo {
       height: 25px;
+      cursor: pointer;
     }
 
     .header-title-container {
@@ -20,11 +25,11 @@
       .header-title {
         display: none;
         color: #2a1d68;
-        font-family: "Plus Jakarta Sans";
+        font-family: "plusjakartasans-light";
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
-        line-height: 43px;
+        line-height: 43px; /* 307.143% */
       }
     }
   }
@@ -36,7 +41,7 @@
 
     .header-title {
       color: var(--purple-1);
-      font-family: "Plus Jakarta Sans";
+      font-family: "plusjakartasans-light";
       font-size: 18px;
       font-weight: 600;
     }
@@ -58,10 +63,10 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 200% */
   border: none;
   text-decoration: none;
 }
+
 .hover-button {
   transition: transform 0.1s ease;
 
@@ -71,15 +76,17 @@
 }
 
 .shaman-button {
+  width: 160px;
   display: flex;
+  height: 39px;
   border: 1.2px solid #916dbf;
   padding: 2px 0 2px;
   gap: 17px;
   z-index: 0;
 
   .svg-container {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 31px;
     margin-inline-start: 2px;
     border-radius: 100%;
     display: flex;
@@ -104,6 +111,10 @@
     line-height: 24px;
     transition: transform 0.8s ease;
     z-index: -1;
+
+    .play {
+      display: none;
+    }
   }
 
   &:hover {
@@ -115,7 +126,7 @@
   }
 
   &:hover .svg-container {
-    transform: translateX(120px);
+    transform: translateX(102px);
     background-color: #381187;
     background: linear-gradient(to bottom, rgb(121, 99, 167), rgb(56, 17, 135));
 
@@ -133,5 +144,115 @@
   &:hover .shaman-button-text {
     transform: translateX(-25px);
     color: #381187;
+
+    .shaman {
+      display: none;
+    }
+
+    .play {
+      display: block;
+      margin-inline-start: -5px;
+    }
+  }
+}
+
+.shaman-button-mobile {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .header-container {
+    width: 100%;
+    padding: 27px 19px 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 27px;
+
+    .header {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      gap: 26px;
+      justify-content: space-between;
+      align-items: center;
+      margin-inline: auto;
+
+      .header-title-container {
+        height: 18px;
+        .header-title {
+          display: block;
+          font-size: 13px;
+        }
+      }
+
+      .aecode-logo {
+        height: 18px;
+      }
+    }
+
+    .shaman-button {
+      display: none;
+    }
+
+    .shaman-button-mobile {
+      width: 161px;
+      height: 39px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding-inline-start: 2px;
+      background-color: #381187;
+      border-radius: 10px;
+      font-family: "ruberoid-semibold";
+      border-radius: 42.5px;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      align-items: center;
+
+      .svg-container-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 100%;
+        background-color: #c5ccde;
+        border: 1px solid white;
+      }
+    }
+
+    .header-buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        font-size: 14px;
+        display: none;
+      }
+
+      a {
+        width: 161px;
+        font-size: 12px;
+      }
+
+      a:last-child {
+        width: 161px;
+        color: transparent; /* Oculta el texto del último enlace */
+        position: relative;
+
+        &::after {
+          color: white;
+          content: "PROGRAMAS";
+          position: absolute;
+        }
+      }
+    }
+
+    .aecode-logo {
+      width: 127px;
+    }
   }
 }
